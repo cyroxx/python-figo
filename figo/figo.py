@@ -14,6 +14,7 @@ import socket
 import ssl
 import sys
 import urllib
+import foo
 
 
 from .models import Account, Notification, Transaction
