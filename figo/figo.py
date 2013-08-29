@@ -14,7 +14,6 @@ import socket
 import ssl
 import sys
 import urllib
-import foo
 
 
 from .models import Account, Notification, Transaction
@@ -24,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 class VerifiedHTTPSConnection(httplib.HTTPSConnection):
-
+    
     """HTTPSConnection supporting certificate authentication based on fingerprint"""
 
     VALID_FINGERPRINTS = ("A6:FE:08:F4:A8:86:F9:C1:BF:4E:70:0A:BD:72:AE:B8:8E:B7:78:52",
